@@ -82,6 +82,6 @@ f_data <- aggregate(. ~subject_id + activity_id, f_data, mean)
 f_data <- merge(f_data,activity_labels,by='activity_id',all.x=TRUE)
 
 #Writing Tidy Data
-write.table(f_data, './tidy_data.txt',row.names=TRUE,sep='\t')
+write.table(f_data, './tidy_data.txt',row.names=FALSE,sep='\t')
 
 
